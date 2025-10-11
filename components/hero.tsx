@@ -1,15 +1,22 @@
 "use client"
 
 import Link from "next/link"
-import { GL } from "./gl"
 import { Button } from "./ui/button"
-import { useState } from "react"
+import { useState, Suspense } from "react"
+import dynamic from "next/dynamic"
+
+const GL = dynamic(() => import("./gl").then(mod => ({ default: mod.GL })), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-black" />
+})
 
 export function Hero() {
   const [hovering, setHovering] = useState(false)
   return (
     <div className="flex flex-col h-svh justify-between relative">
-      <GL hovering={hovering} />
+      <Suspense fallback={<div className="absolute inset-0 bg-black" />}>
+        <GL hovering={hovering} />
+      </Suspense>
 
       <div className="pb-16 mt-auto text-center relative">
         {/* Removed <Pill>BETA</Pill> */}
