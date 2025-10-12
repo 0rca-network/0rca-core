@@ -1,13 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist_Mono } from "next/font/google"
+import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 import { Header } from "@/components/header"
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
 
 export const metadata: Metadata = {
   title: "0rca — Decentralized AI Orchestration",
@@ -22,7 +17,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable} antialiased`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            if (typeof window !== 'undefined' && window.ethereum) {
+              Object.defineProperty(window, 'ethereum', {
+                value: window.ethereum,
+                writable: false,
+                configurable: true
+              });
+            }
+          `
+        }} />
+      </head>
+      <body className={`${GeistMono.variable} antialiased`} suppressHydrationWarning>
         <Header />
         {children}
       </body>
