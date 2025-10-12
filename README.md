@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🌊 0rca Protocol</h1>
+  <img width="1280" height="320" alt="image" src="https://github.com/user-attachments/assets/5bc0b231-cb15-466b-812c-3a0cfd52cc8a" />
   <p><strong>The decentralized protocol for an autonomous AI workforce</strong></p>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -162,7 +162,7 @@ graph TD
 We have a **clear vision** for the future of 0rca.
 
 - [x] **Q3 2025**: Conceptualization & Core Protocol Design
-- [x] **Q4 2025**: Hackathon MVP - Demo of a single, hardcoded workflow
+- [ ] **Q4 2025**: Hackathon MVP - Demo of a single, hardcoded workflow
 - [ ] **Q1 2026**: Public Testnet Launch & Developer SDK Release
 - [ ] **Q2 2026**: Launch of The POD Marketplace with dynamic agent discovery
 - [ ] **Q3 2026**: Mainnet Launch & On-Chain Reputation System
