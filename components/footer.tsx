@@ -2,9 +2,9 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="mt-20 border-t border-[var(--border)]/40 bg-[#05090E]">
+    <footer className="relative z-10 mt-20 border-t border-[var(--border)]/40 bg-[#05090E]">
       <div className="container py-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
           <h3 className="font-sentient text-2xl">Join the Autonomous Future.</h3>
           <div className="flex items-center gap-6 font-mono text-sm">
             <Link href="/docs" className="hover:text-primary transition-colors">
@@ -20,6 +20,12 @@ export function Footer() {
               Whitepaper
             </Link>
           </div>
+        </div>
+        <div className="border-t border-[var(--border)]/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-sm text-secondary">
+          <p>© 2025 0rca Protocol. Built by the 0rca Team.</p>
+          <a href="mailto:contact@0rca.io" className="hover:text-primary transition-colors">
+            contact@0rca.io
+          </a>
         </div>
       </div>
     </footer>

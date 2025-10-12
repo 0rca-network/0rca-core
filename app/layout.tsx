@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/0rca-Photoroom.svg" type="image/svg+xml" />
         <script dangerouslySetInnerHTML={{
           __html: `
             if (typeof window !== 'undefined' && window.ethereum) {

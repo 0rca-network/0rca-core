@@ -10,6 +10,10 @@ export function Hero() {
   return (
     <div className="flex flex-col h-svh justify-between relative">
       <GL hovering={hovering} />
+      <div className="absolute top-8 left-8 z-10 flex items-center gap-1">
+        <img src="/0rca-Photoroom.svg" alt="0rca icon" className="h-16 w-auto" />
+        <img src="/orca_text-Photoroom.svg" alt="0rca" className="h-16 w-auto" />
+      </div>
 
       <div className="pb-16 mt-auto text-center relative">
         {/* Removed <Pill>BETA</Pill> */}
