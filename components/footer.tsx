@@ -10,7 +10,7 @@ export function Footer() {
             <Link href="/docs" className="hover:text-primary transition-colors">
               Docs
             </Link>
-            <Link href="/pod" className="hover:text-primary transition-colors">
+            <Link href="https://pod.0rca.network" className="hover:text-primary transition-colors">
               POD
             </Link>
             <a href="https://forum.0rca.network" className="hover:text-primary transition-colors">
