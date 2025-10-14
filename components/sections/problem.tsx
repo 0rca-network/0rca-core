@@ -3,7 +3,7 @@ import { Reveal } from "../reveal"
 export function ProblemSection() {
   return (
     <section className="relative py-20 md:py-28 text-center" id="problem">
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/10 backdrop-blur-md" />
       <div className="container relative z-10 max-w-7xl mx-auto">
       <Reveal>
         <h2 className="text-3xl md:text-4xl font-sentient max-w-4xl mx-auto">AI is Powerful, but Siloed.</h2>

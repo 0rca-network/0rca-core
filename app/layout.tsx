@@ -18,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/0rca-Photoroom.svg" type="image/svg+xml" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/0rca.png" type="image/png" sizes="150x150" />
         <script dangerouslySetInnerHTML={{
           __html: `
             if (typeof window !== 'undefined' && window.ethereum) {

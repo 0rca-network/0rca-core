@@ -36,10 +36,14 @@ export const Header = () => {
       aria-hidden={!visible}
     >
       <header className="relative container pt-8 md:pt-14">
+        <div className="lg:hidden fixed top-4 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8 z-50">
+          <MobileMenu />
+        </div>
         <nav className="flex max-lg:hidden items-center justify-center gap-x-10 fixed left-1/2 top-8 md:top-14 -translate-x-1/2 z-50">
           {[
             { label: "Docs", href: "/docs" },
             { label: "POD", href: "/pod" },
+            { label: "Forum", href: "https://forum.0rca.network" },
             { label: "About ORCA", href: "/about" },
             { label: "Whitepaper", href: "/whitepaper" },
           ].map((item) => (
@@ -52,8 +56,6 @@ export const Header = () => {
             </Link>
           ))}
         </nav>
-
-        <MobileMenu />
       </header>
     </div>
   )
