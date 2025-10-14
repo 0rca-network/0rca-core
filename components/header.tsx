@@ -42,7 +42,7 @@ export const Header = () => {
         <nav className="flex max-lg:hidden items-center justify-center gap-x-10 fixed left-1/2 top-8 md:top-14 -translate-x-1/2 z-50">
           {[
             { label: "Docs", href: "/docs" },
-            { label: "POD", href: "/pod" },
+            { label: "POD", href: "https://pod.0rca.network" },
             { label: "Forum", href: "https://forum.0rca.network" },
             { label: "About ORCA", href: "/about" },
             { label: "Whitepaper", href: "/whitepaper" },
