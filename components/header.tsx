@@ -2,12 +2,18 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
 import { MobileMenu } from "./mobile-menu"
 
 export const Header = () => {
   const [visible, setVisible] = useState(true)
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
 
   useEffect(() => {
+    setVisible(true)
+    window.scrollTo(0, 0)
+    
     const aa = document.querySelector("[data-automate-anything]") as HTMLElement | null
     if (aa) {
       const onScroll = () => {
@@ -40,7 +46,7 @@ export const Header = () => {
     }
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+  }, [pathname])
 
   return (
     <div
@@ -50,6 +56,11 @@ export const Header = () => {
       aria-hidden={!visible}
     >
       <header className="relative container pt-8 md:pt-14">
+        {!isHomePage && (
+          <Link href="/" className="fixed top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8 z-50">
+            <img src="/0rca-Photoroom.svg" alt="0rca" className="h-10 sm:h-12 md:h-14 w-auto hover:opacity-80 transition-opacity" />
+          </Link>
+        )}
         <div className="lg:hidden fixed top-4 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8 z-50">
           <MobileMenu />
         </div>
