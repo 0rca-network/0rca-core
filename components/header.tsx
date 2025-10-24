@@ -12,7 +12,6 @@ export const Header = () => {
     if (aa) {
       const onScroll = () => {
         const top = aa.getBoundingClientRect().top
-        // visible while headline is below the top edge; hide when it hits or crosses the top
         setVisible(top > 0)
       }
       onScroll()
@@ -21,11 +20,26 @@ export const Header = () => {
     }
 
     const sentinel = document.getElementById("hero-sentinel")
-    if (!sentinel) return
+    if (sentinel) {
+      const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0 })
+      observer.observe(sentinel)
+      return () => observer.disconnect()
+    }
 
-    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0 })
-    observer.observe(sentinel)
-    return () => observer.disconnect()
+    let lastScroll = 0
+    const onScroll = () => {
+      const currentScroll = window.scrollY
+      if (currentScroll <= 0) {
+        setVisible(true)
+      } else if (currentScroll > lastScroll) {
+        setVisible(false)
+      } else {
+        setVisible(true)
+      }
+      lastScroll = currentScroll
+    }
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
   return (
