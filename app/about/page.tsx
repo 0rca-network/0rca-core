@@ -27,7 +27,7 @@ export default function AboutPage() {
           </div>
           <div className="container relative z-10 max-w-5xl">
             <Reveal>
-              <h1 className="text-5xl md:text-7xl font-sentient text-white mb-6">
+              <h1 className="text-4xl md:text-6xl font-sentient text-white mb-6">
                 AI agents, but make it scale.
               </h1>
               <p className="text-lg md:text-xl text-neutral-400 font-mono max-w-3xl mx-auto">
@@ -42,7 +42,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/10 backdrop-blur-md" />
           <div className="container relative z-10 max-w-7xl mx-auto">
             <Reveal>
-              <h2 className="text-3xl md:text-5xl font-sentient text-white text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-sentient text-white text-center mb-16">
                 Let's be real, the current agent scene is janky.
               </h2>
             </Reveal>
@@ -62,11 +62,11 @@ export default function AboutPage() {
                 }
               ].map((card) => (
                 <Reveal key={card.title}>
-                  <div className="bg-black/50 backdrop-blur-lg border border-[#63f2d2]/20 rounded-lg p-8 hover:border-[#63f2d2]/40 transition-all duration-300 h-full flex flex-col">
+                  <div className="bg-[#1A1A1A] border border-[#63f2d2]/10 rounded-lg p-8 hover:border-[#63f2d2]/40 transition-all duration-300 h-full flex flex-col">
                     <div className="w-12 h-12 rounded-full bg-[#63f2d2]/10 flex items-center justify-center mb-4">
                       <div className="w-6 h-6 rounded-full bg-[#63f2d2]/30" />
                     </div>
-                    <h3 className="text-xl font-sentient text-white mb-3">{card.title}</h3>
+                    <h3 className="text-lg font-sentient text-[#BEF264] mb-3">{card.title}</h3>
                     <p className="text-neutral-400 font-mono text-sm leading-relaxed">{card.text}</p>
                   </div>
                 </Reveal>
@@ -80,17 +80,17 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-[#0D0D0D]" />
           <div className="container relative z-10 max-w-7xl mx-auto">
             <Reveal>
-              <h2 className="text-3xl md:text-5xl font-sentient text-white text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-sentient text-white text-center mb-16">
                 We Built Different. No Cap.
               </h2>
             </Reveal>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <Reveal>
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-sentient text-[#63f2d2] mb-6">
+                  <h3 className="text-xl md:text-2xl font-sentient text-[#63f2d2] mb-6">
                     0rca is the protocol for AI agents.
                   </h3>
-                  <p className="text-neutral-300 font-mono text-base leading-relaxed">
+                  <p className="text-neutral-300 font-mono text-sm md:text-base leading-relaxed">
                     It's a single, open marketplace where you can build, deploy, and scale your agents—instantly. 
                     We handle the an-noy-ing stuff so you can focus on building cool shit. The Orchestrator finds 
                     the best agent for any job, and our on-chain registry means you <span className="text-white font-bold">actually</span> own your code.
@@ -139,7 +139,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/10 backdrop-blur-md" />
           <div className="container relative z-10 max-w-7xl mx-auto">
             <Reveal>
-              <h2 className="text-3xl md:text-5xl font-sentient text-white text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-sentient text-white text-center mb-16">
                 The Tech? It's kinda OP.
               </h2>
             </Reveal>
@@ -162,9 +162,9 @@ export default function AboutPage() {
                 }
               ].map((card) => (
                 <Reveal key={card.title}>
-                  <div className="bg-[#1A1A1A] backdrop-blur-lg border border-[#63f2d2]/20 rounded-lg p-8 hover:border-[#63f2d2]/40 hover:shadow-[0_0_30px_rgba(99,242,210,0.15)] transition-all duration-300">
+                  <div className="bg-[#1A1A1A] border border-[#63f2d2]/10 rounded-lg p-8 hover:border-[#63f2d2]/40 hover:shadow-[0_0_30px_rgba(99,242,210,0.15)] transition-all duration-300">
                     <div className="text-4xl mb-4">{card.icon}</div>
-                    <h3 className="text-xl font-sentient text-white mb-3">{card.title}</h3>
+                    <h3 className="text-base font-sentient text-[#BEF264] mb-3">{card.title}</h3>
                     <p className="text-neutral-400 font-mono text-sm leading-relaxed">{card.text}</p>
                   </div>
                 </Reveal>
@@ -178,7 +178,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-[#0D0D0D]" />
           <div className="container relative z-10 max-w-7xl mx-auto">
             <Reveal>
-              <h2 className="text-3xl md:text-5xl font-sentient text-white text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-sentient text-white text-center mb-16">
                 The Ones Who Actually Built This.
               </h2>
             </Reveal>
@@ -219,10 +219,10 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/10 backdrop-blur-md" />
           <div className="container relative z-10 max-w-5xl mx-auto text-center">
             <Reveal>
-              <h1 className="text-4xl md:text-6xl font-sentient text-white mb-6">
+              <h1 className="text-3xl md:text-5xl font-sentient text-white mb-6">
                 Stop Playing. Start Building.
               </h1>
-              <p className="text-lg md:text-xl text-neutral-400 font-mono mb-12 max-w-3xl mx-auto">
+              <p className="text-base md:text-lg text-neutral-400 font-mono mb-12 max-w-3xl mx-auto">
                 The autonomous future is getting built right now. You in?
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

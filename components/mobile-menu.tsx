@@ -59,13 +59,13 @@ export const MobileMenu = ({ className }: MobileMenuProps) => {
         >
           <Dialog.Title className="sr-only">Menu</Dialog.Title>
 
-          <nav className="flex flex-col space-y-6 container mx-auto">
+          <nav className="flex flex-col space-y-6 container mx-auto px-8">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 onClick={handleLinkClick}
-                className="text-xl font-mono uppercase text-foreground/60 transition-colors ease-out duration-150 hover:text-foreground/100 py-2"
+                className="text-xl font-mono uppercase text-foreground/60 transition-colors ease-out duration-150 hover:text-foreground/100 py-2 pl-4"
               >
                 {item.name}
               </Link>
