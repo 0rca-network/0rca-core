@@ -11,7 +11,6 @@ export function Hero() {
     <div className="flex flex-col h-svh justify-between relative">
       <GL hovering={hovering} />
       <div className="absolute top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8 z-10 flex items-center">
-        <img src="/0rca-Photoroom.svg" alt="0rca icon" className="h-10 sm:h-12 md:h-16 w-auto" />
         <img src="/orca_text-Photoroom.svg" alt="0rca" className="h-10 sm:h-12 md:h-16 w-auto -ml-5 sm:-ml-6 md:-ml-8" />
       </div>
 
@@ -27,7 +26,7 @@ export function Hero() {
         </p>
 
         <div className="flex items-center justify-center gap-3 sm:gap-4 mt-14">
-          <Link href="/pod">
+          <Link href="https://pod.0rca.network">
             <Button
               className="bg-primary text-[var(--primary-foreground)] hover:brightness-90"
               onMouseEnter={() => setHovering(true)}
@@ -36,7 +35,7 @@ export function Hero() {
               Explore The POD
             </Button>
           </Link>
-          <Link href="/docs" className="contents">
+          <Link href="https://docs.0rca.network" className="contents">
             <Button
               variant="outline"
               className="border-[var(--border)] text-foreground hover:bg-[color:var(--border)]/10 bg-transparent"

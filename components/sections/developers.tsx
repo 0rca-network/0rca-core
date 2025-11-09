@@ -29,7 +29,7 @@ console.log(res.summary)`}
         </pre>
       </Reveal>
         <Reveal>
-          <Link href="/docs">
+          <Link href="https://docs.0rca.network">
             <Button className="mt-6 bg-primary text-[var(--primary-foreground)] hover:brightness-90">
               Start Building
             </Button>
