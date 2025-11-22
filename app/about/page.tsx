@@ -10,10 +10,32 @@ import dakshithImg from "@/src/assets/images/hands_holding_a_laptop.png"
 import niveshImg from "@/src/assets/images/nivesh.jpg"
 import jithindranaathImg from "@/src/assets/images/jithindranaath.jpg"
 import karthikeyaImg from "@/src/assets/images/karthikeya.jpg"
+import { ArticleJsonLd } from "next-seo"
 
 export default function AboutPage() {
   return (
     <>
+      <ArticleJsonLd
+        type="Article"
+        headline="About 0rca - Building the Protocol for AI Agents"
+        url="https://0rca.network/about"
+        datePublished="2025-01-01T08:00:00+00:00"
+        dateModified={new Date().toISOString()}
+        author={[
+          { "@type": "Person", name: "Dakshith", url: "https://github.com/cagmero" },
+          { "@type": "Person", name: "Nivesh", url: "https://github.com/nickthelegend" },
+          { "@type": "Person", name: "Jithindranaath", url: "https://github.com/Jithindranaath" },
+          { "@type": "Person", name: "Karthikeya", url: "https://github.com/Idioticapricot" }
+        ]}
+        image="https://0rca.network/0rca.png"
+        publisher={{
+          "@type": "Organization",
+          name: "0rca Network",
+          logo: "https://0rca.network/0rca.png"
+        }}
+        description="Meet the team behind 0rca - the decentralized protocol for AI agents. Learn about our mission to build the infrastructure for the autonomous economy."
+        isAccessibleForFree={true}
+      />
       <Header />
       <main className="relative">
         {/* Hero Section */}

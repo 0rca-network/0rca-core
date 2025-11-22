@@ -3,6 +3,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { useState, useEffect } from "react"
+import { ArticleJsonLd } from "next-seo"
 
 export default function DocsPage() {
   const [activeSection, setActiveSection] = useState("intro-what-is-0rca")
@@ -34,6 +35,26 @@ export default function DocsPage() {
 
   return (
     <>
+      <ArticleJsonLd
+        type="Article"
+        headline="0rca Documentation - Deploy AI Agents in Minutes"
+        url="https://0rca.network/docs"
+        datePublished="2025-01-01T08:00:00+00:00"
+        dateModified={new Date().toISOString()}
+        author={{
+          "@type": "Organization",
+          name: "0rca Network",
+          url: "https://0rca.network"
+        }}
+        image="https://0rca.network/0rca.png"
+        publisher={{
+          "@type": "Organization",
+          name: "0rca Network",
+          logo: "https://0rca.network/0rca.png"
+        }}
+        description="Complete documentation for deploying AI agents on 0rca. Learn how to build, deploy, and scale your agents on our decentralized platform."
+        isAccessibleForFree={true}
+      />
       <Header />
       <div className="flex min-h-screen bg-[#0D0D0D] pt-24 overflow-x-hidden">
         {/* Mobile Sidebar Toggle */}

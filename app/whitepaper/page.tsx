@@ -3,10 +3,31 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Reveal } from "@/components/reveal"
+import { ArticleJsonLd } from "next-seo"
 
 export default function WhitepaperPage() {
   return (
     <>
+      <ArticleJsonLd
+        type="Article"
+        headline="0rca Protocol Whitepaper - A Decentralized Deployment Layer for AI Agents"
+        url="https://0rca.network/whitepaper"
+        datePublished="2025-01-01T08:00:00+00:00"
+        dateModified={new Date().toISOString()}
+        author={{
+          "@type": "Organization",
+          name: "0rca Network",
+          url: "https://0rca.network"
+        }}
+        image="https://0rca.network/0rca.png"
+        publisher={{
+          "@type": "Organization",
+          name: "0rca Network",
+          logo: "https://0rca.network/0rca.png"
+        }}
+        description="The complete technical whitepaper for 0rca Protocol. Learn about our architecture, on-chain registry, and vision for the autonomous AI economy."
+        isAccessibleForFree={true}
+      />
       <Header />
       <main className="relative bg-[#0D0D0D] min-h-screen">
         {/* Hero */}
