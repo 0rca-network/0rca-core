@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <ArticleJsonLd
         type="Article"
-        headline="0rca - The Decentralized Protocol for an Autonomous AI Workforce"
+        headline="0rca Network"
         url="https://0rca.network"
         datePublished="2025-01-01T08:00:00+00:00"
         dateModified={new Date().toISOString()}
