@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 mb-3">
           <h3 className="font-sentient text-base sm:text-lg text-center md:text-left">Join the Autonomous Future.</h3>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-mono text-xs">
-            <Link href="/docs" className="hover:text-primary transition-colors">
+            <Link href="https://docs.0rca.network" className="hover:text-primary transition-colors">
               Docs
             </Link>
             <Link href="https://pod.0rca.network" className="hover:text-primary transition-colors">
