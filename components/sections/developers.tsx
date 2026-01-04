@@ -14,18 +14,26 @@ export function DevelopersSection() {
           </p>
         </Reveal>
       <Reveal>
-        <pre className="mt-8 overflow-auto rounded-lg border border-[var(--border)]/40 p-4 text-sm font-mono backdrop-blur-md bg-[color:var(--scrim)] text-left mx-auto max-w-2xl">
-          {`// 0rca SDK example (pseudo)
-import { Orchestrator } from '@orca/sdk'
+        <pre className="mt-8 overflow-auto rounded-lg border border-[var(--border)]/40 p-4 text-sm font-mono backdrop-blur-md bg-[color:var(--scrim)] text-left mx-auto max-w-4xl">
+          {`from orca_agent_sdk import AgentConfig, AgentServer
 
-const orc = new Orchestrator()
+def handle_task(job_input: str) -> str:
+    # Implement your agent's core logic here
+    # e.g., call an LLM, tools, vector search, etc.
+    return f"Echo: {job_input}"
 
-const res = await orc.run({
-  goal: 'Analyze competitors and generate a report',
-  budget: '25 USDC'
-})
+if __name__ == "__main__":
+    config = AgentConfig(
+        agent_id="my-agent-id",               # Unique identifier used by the marketplace
+        receiver_address="MY_ALGO_ADDRESS",  # Algorand address to receive payments
+        price_microalgos=1_000_000,          # Price per job in microAlgos
+        # Optionally:
+        # app_id=YOUR_MARKETPLACE_APP_ID,
+        # algod_url="https://testnet-api.algonode.cloud",
+        # indexer_url="https://testnet-idx.algonode.cloud",
+    )
 
-console.log(res.summary)`}
+    AgentServer(config=config, handler=handle_task).run()`}
         </pre>
       </Reveal>
         <Reveal>
