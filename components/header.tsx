@@ -71,6 +71,7 @@ export const Header = () => {
             { label: "Forum", href: "https://forum.0rca.network" },
             { label: "About ORCA", href: "/about" },
             { label: "Whitepaper", href: "/whitepaper" },
+            { label: "Builders", href: "https://builders.0rca.network" },
           ].map((item) => (
             <Link
               className="uppercase inline-block font-mono text-foreground/80 hover:text-primary transition-colors ease-out duration-150"
