@@ -19,6 +19,7 @@ export const MobileMenu = ({ className }: MobileMenuProps) => {
     { name: "Forum", href: "https://forum.0rca.network" },
     { name: "About ORCA", href: "/about" },
     { name: "Whitepaper", href: "/whitepaper" },
+    { name: "Builders", href: "https://build.0rca.network" },
   ];
 
   const handleLinkClick = () => {

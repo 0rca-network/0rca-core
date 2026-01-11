@@ -13,7 +13,7 @@ export const Header = () => {
   useEffect(() => {
     setVisible(true)
     window.scrollTo(0, 0)
-    
+
     const aa = document.querySelector("[data-automate-anything]") as HTMLElement | null
     if (aa) {
       const onScroll = () => {
@@ -50,9 +50,8 @@ export const Header = () => {
 
   return (
     <div
-      className={`fixed z-50 top-0 left-0 w-full transition-all duration-300 ${
-        visible ? "opacity-100" : "opacity-0 -translate-y-2 pointer-events-none"
-      }`}
+      className={`fixed z-50 top-0 left-0 w-full transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 -translate-y-2 pointer-events-none"
+        }`}
       aria-hidden={!visible}
     >
       <header className="relative container pt-8 md:pt-14">
@@ -71,7 +70,7 @@ export const Header = () => {
             { label: "Forum", href: "https://forum.0rca.network" },
             { label: "About ORCA", href: "/about" },
             { label: "Whitepaper", href: "/whitepaper" },
-            { label: "Builders", href: "https://builders.0rca.network" },
+            { label: "Builders", href: "https://build.0rca.network" },
           ].map((item) => (
             <Link
               className="uppercase inline-block font-mono text-foreground/80 hover:text-primary transition-colors ease-out duration-150"
