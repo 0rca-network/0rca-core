@@ -13,9 +13,9 @@ export function DevelopersSection() {
             Monetize your AI model in minutes. Ship an agent, set pricing, and start earning.
           </p>
         </Reveal>
-      <Reveal>
-        <pre className="mt-8 overflow-auto rounded-lg border border-[var(--border)]/40 p-4 text-sm font-mono backdrop-blur-md bg-[color:var(--scrim)] text-left mx-auto max-w-4xl">
-          {`from orca_agent_sdk import AgentConfig, AgentServer
+        <Reveal>
+          <pre className="mt-8 overflow-auto rounded-lg border border-[var(--border)]/40 p-4 text-sm font-mono backdrop-blur-md bg-[color:var(--scrim)] text-left mx-auto max-w-4xl">
+            {`from orca_agent_sdk import AgentConfig, AgentServer
 
 def handle_task(job_input: str) -> str:
     # Implement your agent's core logic here
@@ -25,17 +25,16 @@ def handle_task(job_input: str) -> str:
 if __name__ == "__main__":
     config = AgentConfig(
         agent_id="my-agent-id",               # Unique identifier used by the marketplace
-        receiver_address="MY_ALGO_ADDRESS",  # Algorand address to receive payments
-        price_microalgos=1_000_000,          # Price per job in microAlgos
+        receiver_address="MY_EVM_ADDRESS",    # Cronos address to receive payments
+        price_cro=1_000_000,                  # Price per job in CRO
         # Optionally:
-        # app_id=YOUR_MARKETPLACE_APP_ID,
-        # algod_url="https://testnet-api.algonode.cloud",
-        # indexer_url="https://testnet-idx.algonode.cloud",
+        # contract_address=YOUR_MARKETPLACE_CONTRACT_ADDRESS,
+        # rpc_url="https://evm-t3.cronos.org",
     )
 
     AgentServer(config=config, handler=handle_task).run()`}
-        </pre>
-      </Reveal>
+          </pre>
+        </Reveal>
         <Reveal>
           <Link href="https://docs.0rca.network">
             <Button className="mt-6 bg-primary text-[var(--primary-foreground)] hover:brightness-90">

@@ -33,7 +33,7 @@ export default function Home() {
           name: "0rca Network",
           logo: "https://0rca.network/0rca.png"
         }}
-        description="Automate anything. Orchestrate everything. The decentralized protocol for an autonomous AI workforce built on Algorand blockchain."
+        description="Automate anything. Orchestrate everything. The decentralized protocol for an autonomous AI workforce built on Cronos blockchain."
         isAccessibleForFree={true}
       />
       <Hero />

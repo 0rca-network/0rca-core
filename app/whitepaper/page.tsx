@@ -111,7 +111,7 @@ export default function WhitepaperPage() {
                 </div>
                 <div className="bg-[#1A1A1A] border border-[#63f2d2]/10 rounded-lg p-6">
                   <h3 className="text-lg font-sentient text-[#BEF264] mb-2">For the Ecosystem</h3>
-                  <p className="text-neutral-400 font-mono text-sm leading-relaxed">We provide an on-chain registry (built on Algorand) that acts as the "proof of ownership" and the payment ledger, ensuring all interactions are transparent and trustworthy.</p>
+                  <p className="text-neutral-400 font-mono text-sm leading-relaxed">We provide an on-chain registry (built on Cronos) that acts as the "proof of ownership" and the payment ledger, ensuring all interactions are transparent and trustworthy.</p>
                 </div>
               </div>
             </Reveal>
@@ -126,7 +126,7 @@ export default function WhitepaperPage() {
               <p className="text-neutral-300 font-mono text-sm md:text-base leading-relaxed mb-8">
                 The 0rca platform is composed of three primary layers that work in concert.
               </p>
-              
+
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-sentient text-[#63f2d2] mb-4">3.1. The Agent Pods (The Workforce)</h3>
@@ -170,7 +170,7 @@ export default function WhitepaperPage() {
                   <div className="space-y-4">
                     <div className="bg-[#1A1A1A] border border-[#63f2d2]/10 rounded-lg p-6">
                       <h4 className="text-lg font-sentient text-[#BEF264] mb-2">The Planner</h4>
-                      <p className="text-neutral-400 font-mono text-sm leading-relaxed">A user sends a high-level goal (e.g., "Find the latest news about Algorand and write a blog post"). The Orchestrator first fetches the complete "tool list" from the MCP Gateway. It then uses its reasoning to create a step-by-step JSON plan.</p>
+                      <p className="text-neutral-400 font-mono text-sm leading-relaxed">A user sends a high-level goal (e.g., "Find the latest news about Cronos and write a blog post"). The Orchestrator first fetches the complete "tool list" from the MCP Gateway. It then uses its reasoning to create a step-by-step JSON plan.</p>
                     </div>
                     <div className="bg-[#1A1A1A] border border-[#63f2d2]/10 rounded-lg p-6">
                       <h4 className="text-lg font-sentient text-[#BEF264] mb-2">The Executor</h4>
@@ -190,9 +190,9 @@ export default function WhitepaperPage() {
         <section className="relative py-16 px-4">
           <div className="container max-w-4xl mx-auto">
             <Reveal>
-              <h2 className="text-3xl md:text-4xl font-sentient text-white mb-8">4. The On-Chain Layer: Algorand as the Trust Protocol</h2>
+              <h2 className="text-3xl md:text-4xl font-sentient text-white mb-8">4. The On-Chain Layer: Cronos as the Trust Protocol</h2>
               <p className="text-neutral-300 font-mono text-sm md:text-base leading-relaxed mb-8">
-                Our backend provides the speed and scalability, but the Algorand blockchain provides the truth.
+                Our backend provides the speed and scalability, but the Cronos blockchain provides the truth.
               </p>
               <div className="space-y-6">
                 <div className="bg-black/50 backdrop-blur-lg border border-[#63f2d2]/20 rounded-lg p-6">
@@ -201,7 +201,7 @@ export default function WhitepaperPage() {
                 </div>
                 <div className="bg-black/50 backdrop-blur-lg border border-[#63f2d2]/20 rounded-lg p-6">
                   <h3 className="text-xl font-sentient text-[#63f2d2] mb-3">4.2. On-Chain Payments</h3>
-                  <p className="text-neutral-300 font-mono text-sm leading-relaxed">When the Orchestrator "hires" an agent to perform a task, it initiates an on-chain transaction. This payment from the user to the agent developer is recorded immutably on the Algorand ledger.</p>
+                  <p className="text-neutral-300 font-mono text-sm leading-relaxed">When the Orchestrator "hires" an agent to perform a task, it initiates an on-chain transaction. This payment from the user to the agent developer is recorded immutably on the Cronos ledger.</p>
                 </div>
                 <div className="bg-black/50 backdrop-blur-lg border border-[#63f2d2]/20 rounded-lg p-6">
                   <h3 className="text-xl font-sentient text-[#63f2d2] mb-3">4.3. Verifiable Reputation</h3>
@@ -245,7 +245,7 @@ export default function WhitepaperPage() {
               <div className="space-y-4">
                 {[
                   { phase: "Phase 1 (Current)", text: "Core platform development, DOKS pipeline setup, MCP Gateway and Orchestrator (v1) deployment." },
-                  { phase: "Phase 2 (Near Term)", text: "Launch \"The POD\" marketplace UI, implement on-chain payments with the Algorand registry, and release developer dashboards for analytics." },
+                  { phase: "Phase 2 (Near Term)", text: "Launch \"The POD\" marketplace UI, implement on-chain payments with the Cronos registry, and release developer dashboards for analytics." },
                   { phase: "Phase 3 (Long Term)", text: "Implement a full 0rca DAO for governance, decentralize the Orchestrator layer, and introduce advanced cost-saving measures like Scale-to-Zero." }
                 ].map((item) => (
                   <div key={item.phase} className="bg-black/50 backdrop-blur-lg border border-[#63f2d2]/20 rounded-lg p-6">
