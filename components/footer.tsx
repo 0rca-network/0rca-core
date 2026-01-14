@@ -19,16 +19,27 @@ export function Footer() {
             <Link href="/about" className="hover:text-primary transition-colors">
               About
             </Link>
+            <Link href="/contact-us" className="hover:text-primary transition-colors">
+              Contact
+            </Link>
             <Link href="/whitepaper" className="hover:text-primary transition-colors">
               Whitepaper
+            </Link>
+            <Link href="/terms-conditions" className="hover:text-primary transition-colors">
+              Terms
             </Link>
           </div>
         </div>
         <div className="border-t border-[var(--border)]/20 pt-3 flex flex-col md:flex-row items-center justify-between gap-2 font-mono text-xs text-secondary">
           <p>© 2025 0rca Protocol. Built by the 0rca Team.</p>
-          <a href="mailto:zero80932@gmail.com" className="hover:text-primary transition-colors">
-            zero80932@gmail.com
-          </a>
+          <div className="flex items-center gap-4">
+            <Link href="/terms-conditions" className="hover:text-primary transition-colors">
+              Terms & Conditions
+            </Link>
+            <a href="mailto:zero80932@gmail.com" className="hover:text-primary transition-colors">
+              zero80932@gmail.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>

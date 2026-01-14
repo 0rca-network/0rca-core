@@ -18,7 +18,9 @@ export const MobileMenu = ({ className }: MobileMenuProps) => {
     { name: "POD", href: "/pod" },
     { name: "Forum", href: "https://forum.0rca.network" },
     { name: "About ORCA", href: "/about" },
+    { name: "Contact", href: "/contact-us" },
     { name: "Whitepaper", href: "/whitepaper" },
+    { name: "Terms & Conditions", href: "/terms-conditions" },
     { name: "Builders", href: "https://build.0rca.network" },
   ];
 

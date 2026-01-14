@@ -69,6 +69,7 @@ export const Header = () => {
             { label: "POD", href: "https://pod.0rca.network" },
             { label: "Forum", href: "https://forum.0rca.network" },
             { label: "About ORCA", href: "/about" },
+            { label: "Contact", href: "/contact-us" },
             { label: "Whitepaper", href: "/whitepaper" },
             { label: "Builders", href: "https://build.0rca.network" },
           ].map((item) => (
